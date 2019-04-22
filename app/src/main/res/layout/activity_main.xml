@@ -1,20 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/tv_data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <data>
 
-</android.support.constraint.ConstraintLayout>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_writedb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="写数据库" />
+
+                <Button
+                    android:id="@+id/btn_readdb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="读数据库" />
+
+                <Button
+                    android:id="@+id/btn_deldb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="删除数据" />
+
+
+                <Button
+                    android:id="@+id/btn_mthread_write"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="多线程写数据库" />
+
+                <Button
+                    android:id="@+id/btn_mthread_read"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="多线程读数据库" />
+
+                <TextView
+                    android:id="@+id/tv_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff0000"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+</layout>
