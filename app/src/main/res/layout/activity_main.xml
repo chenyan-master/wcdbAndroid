@@ -52,6 +52,12 @@
                     android:layout_height="wrap_content"
                     android:text="多线程读数据库" />
 
+                <Button
+                    android:id="@+id/btn_second_write"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="定时写数据库" />
+
                 <TextView
                     android:id="@+id/tv_data"
                     android:layout_width="match_parent"
